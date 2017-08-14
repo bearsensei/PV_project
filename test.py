@@ -34,10 +34,9 @@ age_null_count = len(age_null[age_null == True])
 
 correct_mean_age = titanic_survived["Age"].mean()
 correct_mean_fare = titanic_survived["Fare"].mean()
+
 passenger_classes = [1, 2, 3]
 fares_by_class = {}
-
-
 
 for pclass in passenger_classes:
     pclass_rows = titanic_survived[titanic_survived["Pclass"] == pclass]
